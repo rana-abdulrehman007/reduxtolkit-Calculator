@@ -7,37 +7,29 @@ export default function Navbar2() {
 
     return (
         <div>
-            <nav style={{ display: "flex", justifyContent: "space-between", backgroundColor: "black", color: "white", padding: "20px 30px" }}>
-                <h2>My Shop</h2>
-                <ul style={{ display: "flex", gap: "80px", listStyle: "none", marginRight: "50px", padding: "20px" }}>
+            <nav className='bg-[#49BBBD]' style={{ display: "flex", justifyContent: "space-between", color: "white", padding: "10px 15px" }}>
+                <img src="./Navlogo.png" alt="" />
+                <ul style={{ display: "flex", gap: "50px", listStyle: "none", marginRight: "20px", padding: "15px" }}>
 
                     <NavLink to="/"> <li>home</li>
                     </NavLink>
-                    <NavLink to="/About">                    <li>about</li>
-                    </NavLink  >
-                    <NavLink to="/Contact">                    <li>contact</li>
+                    <NavLink to="/courses">                    <li>Courses</li>
                     </NavLink>
-                    <NavLink to="/Search">                    <li>search</li>
+                    <NavLink to="/careers">                    <li>Careers</li>
                     </NavLink>
 
-                    <NavLink to="/Student">
-                        <li>Student</li>
+                     <NavLink to="/blog">
+                        <li>Blog</li>
                     </NavLink>
 
-                    <NavLink to="/product">
-                        <li>Product</li>
-                    </NavLink>
+                    <NavLink to="/about">
+                        <li>About us</li>
+                    </NavLink> 
 
                      <NavLink to="/login">
-                        <li>Login</li>
+                    <button className='bg-white text-black  h-[60px] w-[160px]  rounded-2xl '>Login</button>
                     </NavLink>
-
-
-                    <NavLink to="/productdetail">
-                        <li>Product Detail</li>
-                    </NavLink>
-
-
+                  <button className='text-white bg-blue-200 rounded-2xl  h-[60px] w-[160px]  text-center'>Sign Up</button>
 
                 </ul>
             </nav>

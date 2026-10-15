@@ -1,12 +1,10 @@
 import React from 'react'
 
-
-export default function Search() {
+export default function About() {
   return (
     <div>
-      <h1>Search</h1>
-
-
+        <h1>About</h1>
+      
     </div>
   )
 }

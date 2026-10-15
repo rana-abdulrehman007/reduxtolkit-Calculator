@@ -1,19 +1,79 @@
-import React, { useCallback, useEffect, useReducer, useRef, useState } from 'react'
 import './App.css';
-import Calculator from './Calculator';
+import Navbar2 from './Navbar2';
+import { Routes, Route } from 'react-router-dom';
+
+import Home from "./pages/Home"
+
+
+
+import Footer from './component/Footer';
+import Courses from './pages/Courses';
+import Blog from './pages/Blog';
+import Careers from './pages/Careers';
+import About from './pages/About';
+import Login from './pages/Login';
 
 
 export default function App() {
 
+  const routes = [
+    { path: '/', element: <Home /> },
+    { path: '/courses', element: <Courses /> },
+    { path: '/blog', element: <Blog /> },
+    { path: '/careers', element: <Careers /> },
+    { path: '/about', element: <About /> },
+    { path: '/login', element: <Login /> }
 
+
+  ]
 
 
   return (
     <>
 
-    
 
-        <Calculator/>
+      {/* <Navbar2/> */}
+
+
+      <Navbar2 />
+
+      <Routes>
+
+        {
+          routes.map((route, index) => {
+            return (
+               
+                <Route
+                key={index}
+                  path={route.path}
+                  element={route.element}
+
+                />
+              
+            )
+          })
+        }
+
+      </Routes>
+
+      {/* <Routes>
+
+<Route path='/' element={<Home/>}/>
+<Route path='/courses' element={<Courses/>}></Route>
+<Route path='/blog' element={<Blog/>}/>
+<Route path='/careers' element={<Careers/>}
+/>
+<Route path='/about' element={<About/>}/>
+<Route path='/login' element={<Login/>}/>
+
+</Routes> */}
+
+
+
+      <Footer />
+
+
+      {/* <Calculator/> */}
 
 
     </>
