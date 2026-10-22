@@ -12,6 +12,11 @@ import Blog from './pages/Blog';
 import Careers from './pages/Careers';
 import About from './pages/About';
 import Login from './pages/Login';
+import CourseDetail from './pages/coursesDetail';
+import BlogDetail from './pages/blogDetail';
+import Membership from './pages/Membership';
+import Checkout from './pages/Checkout';
+import Search from './pages/Search';
 
 
 export default function App() {
@@ -22,7 +27,18 @@ export default function App() {
     { path: '/blog', element: <Blog /> },
     { path: '/careers', element: <Careers /> },
     { path: '/about', element: <About /> },
-    { path: '/login', element: <Login /> }
+    { path: '/login', element: <Login /> },
+    { path: '/coursesdetail', element: <CourseDetail /> },
+    { path: '/blogdetail', element: <BlogDetail /> },
+    { path: '/membership', element: <Membership /> },
+     { path: '/checkout', element: <Checkout /> },
+     { path: '/search', element: <Search /> }
+
+
+
+
+
+
 
 
   ]
@@ -42,14 +58,14 @@ export default function App() {
         {
           routes.map((route, index) => {
             return (
-               
-                <Route
-                key={index}
-                  path={route.path}
-                  element={route.element}
 
-                />
-              
+              <Route
+                key={index}
+                path={route.path}
+                element={route.element}
+
+              />
+
             )
           })
         }

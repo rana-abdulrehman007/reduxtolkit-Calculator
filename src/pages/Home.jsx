@@ -29,6 +29,6 @@ export default function Home() {
       <ExploreCourses />
       <Testimonial />
       <NewsAndResources />
-    </>
+    </> 
   );
 }

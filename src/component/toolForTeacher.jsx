@@ -4,7 +4,7 @@ export default function ToolForTeacher() {
     return (
         <>
 
-            <section className='max-w-6xl mx-auto px-6 py-16'>
+            <section className='max-w-6xl mx-auto px-6 sm:px-8 md:px-10 py-6 sm:py-8 md:py-16'>
                 <div className='flex flex-col md:flex-row items-center justify-between gap-12'>
 
                     {/* left: text */}
